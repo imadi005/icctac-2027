@@ -97,9 +97,22 @@ button{ font-family:inherit; cursor:pointer; }
 .btn-block{ width:100%; justify-content:center; }
 
 /* ---------- Identity bar & title bar (mirrors original site header) ---------- */
-.identity-bar{ background:var(--navy); padding:20px var(--pad); }
-.identity-row{ max-width:var(--container); margin:0 auto; display:flex; align-items:center; justify-content:center; gap:28px; flex-wrap:wrap; }
-.identity-row img{ height:200px; width:auto; max-width:100%; }
+.identity-bar{
+  background:var(--navy); padding:20px var(--pad); position:relative; overflow:hidden;
+}
+.identity-bar::before{
+  content:''; position:absolute; inset:0;
+  background-image: radial-gradient(rgba(179,134,44,0.35) 1px, transparent 1px);
+  background-size: 28px 28px;
+  -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,0.9) 0%, transparent 72%);
+  mask-image: radial-gradient(ellipse at center, rgba(0,0,0,0.9) 0%, transparent 72%);
+  pointer-events:none;
+}
+.identity-row{
+  max-width:var(--container); margin:0 auto; display:flex; align-items:center; justify-content:center; gap:28px; flex-wrap:wrap;
+  position:relative; z-index:1;
+}
+.identity-row img{ height:clamp(120px, 11vw, 220px); width:auto; max-width:100%; }
 .title-bar{ background:var(--bg-alt); padding:32px 0 0; border-bottom:1px solid var(--line); }
 .title-marquee{ overflow:hidden; width:100%; }
 .title-marquee-track{
