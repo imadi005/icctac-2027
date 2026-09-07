@@ -11,7 +11,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23132038'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='%23B3862C' font-family='Georgia,serif'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="assets/css/style.css?v=16">
+<link rel="stylesheet" href="assets/css/style.css?v=17">
 </head>
 <body>
 <a href="#main" class="skip-link">Skip to content</a>
@@ -33,7 +33,7 @@
   </div>
   <p style="font-family:var(--f-mono); font-size:12.5px; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted); margin-top:16px; text-align:center;">Kristu Jayanti Institute of Technology &middot; in collaboration with Skyline University Nigeria</p>
 </div>
-<div class="date-banner"><b>New</b>Abstract Submission: September 25, 2026 · Full Paper Submission: October 20, 2026</div>
+<div class="date-banner"><span class="db-dot"></span><b>New</b>Abstract Submission: September 25, 2026 · Full Paper Submission: October 20, 2026</div>
 
 <!-- ============ NAV ============ -->
 <header class="nav" id="siteNav">
@@ -237,37 +237,44 @@
   </div>
 </section>
 
-<!-- ============ AREAS OF INTEREST ============ -->
+<!-- ============ CALL FOR PAPERS ============ -->
 <section class="section section-alt" id="tracks">
   <div class="container">
-    <div class="section-head reveal">
+    <div class="cfp-banner reveal">
       <div>
         <p class="eyebrow">Call for Papers</p>
-        <h2>Areas of Interest</h2>
+        <h2 style="margin-top:14px;">Submit Your Research</h2>
+        <p class="muted" style="max-width:520px; margin-top:14px;">Original, unpublished research is invited across the areas listed below, but not limited to them. Full papers are accepted in 4 to 6 pages, Journal format.</p>
       </div>
-      <p class="muted" style="max-width:340px;">Original, unpublished research is invited across the following areas, but not limited to them.</p>
+      <a class="btn btn-solid" href="Submitppr.html">
+        Submit Your Paper
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+      </a>
     </div>
 
+    <div class="section-head reveal" style="margin-top:56px;">
+      <div><h2 style="font-size:clamp(24px,3vw,34px);">Areas of Interest</h2></div>
+    </div>
     <div class="reveal">
-      <ul style="display:flex; flex-wrap:wrap; gap:14px 16px; padding:0; list-style:none;">
-        <li class="mono" style="font-size:14.5px; color:var(--muted); padding:12px 20px; border:1px solid var(--line);">Data Science</li>
-        <li class="mono" style="font-size:14.5px; color:var(--muted); padding:12px 20px; border:1px solid var(--line);">Machine Learning</li>
-        <li class="mono" style="font-size:14.5px; color:var(--muted); padding:12px 20px; border:1px solid var(--line);">Human-Computer Interaction</li>
-        <li class="mono" style="font-size:14.5px; color:var(--muted); padding:12px 20px; border:1px solid var(--line);">Artificial Intelligence</li>
-        <li class="mono" style="font-size:14.5px; color:var(--muted); padding:12px 20px; border:1px solid var(--line);">Mobile Computing</li>
-        <li class="mono" style="font-size:14.5px; color:var(--muted); padding:12px 20px; border:1px solid var(--line);">Parallel Computing</li>
-        <li class="mono" style="font-size:14.5px; color:var(--muted); padding:12px 20px; border:1px solid var(--line);">Cloud Computing</li>
-        <li class="mono" style="font-size:14.5px; color:var(--muted); padding:12px 20px; border:1px solid var(--line);">Data Mining</li>
-        <li class="mono" style="font-size:14.5px; color:var(--muted); padding:12px 20px; border:1px solid var(--line);">Text Mining</li>
-        <li class="mono" style="font-size:14.5px; color:var(--muted); padding:12px 20px; border:1px solid var(--line);">Web Mining</li>
-        <li class="mono" style="font-size:14.5px; color:var(--muted); padding:12px 20px; border:1px solid var(--line);">Image Processing</li>
-        <li class="mono" style="font-size:14.5px; color:var(--muted); padding:12px 20px; border:1px solid var(--line);">Big Data Analytics</li>
-        <li class="mono" style="font-size:14.5px; color:var(--muted); padding:12px 20px; border:1px solid var(--line);">Internet of Things</li>
-        <li class="mono" style="font-size:14.5px; color:var(--muted); padding:12px 20px; border:1px solid var(--line);">Embedded Systems</li>
-        <li class="mono" style="font-size:14.5px; color:var(--muted); padding:12px 20px; border:1px solid var(--line);">Bio-Inspired Computing</li>
-        <li class="mono" style="font-size:14.5px; color:var(--muted); padding:12px 20px; border:1px solid var(--line);">Networks</li>
-        <li class="mono" style="font-size:14.5px; color:var(--muted); padding:12px 20px; border:1px solid var(--line);">Data Security</li>
-        <li class="mono" style="font-size:14.5px; color:var(--muted); padding:12px 20px; border:1px solid var(--line);">Software Engineering</li>
+      <ul class="topic-chips">
+        <li>Data Science</li>
+        <li>Machine Learning</li>
+        <li>Human-Computer Interaction</li>
+        <li>Artificial Intelligence</li>
+        <li>Mobile Computing</li>
+        <li>Parallel Computing</li>
+        <li>Cloud Computing</li>
+        <li>Data Mining</li>
+        <li>Text Mining</li>
+        <li>Web Mining</li>
+        <li>Image Processing</li>
+        <li>Big Data Analytics</li>
+        <li>Internet of Things</li>
+        <li>Embedded Systems</li>
+        <li>Bio-Inspired Computing</li>
+        <li>Networks</li>
+        <li>Data Security</li>
+        <li>Software Engineering</li>
       </ul>
     </div>
   </div>
